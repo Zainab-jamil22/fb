@@ -1,0 +1,159 @@
+*{
+    flex-wrap: wrap;
+}
+:root{
+     --bg: #f0f2f5;
+     --blue: #1877f2;
+     --dark-blue:#1360c4;
+     --green:#42b72a;
+     --dark-green:#369423;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    overflow: hidden;
+    background-color: var(--bg);
+    font-family: Helvetica, sans-serif;
+}
+
+.main-wrapper{
+    width: 400px;
+    height: 680px;
+    margin: auto;
+    margin-top: 40px;
+}
+.branding{
+    text-align: center;
+}
+.logo{
+    color: var(--blue);
+    font-size: 3.7rem;
+    letter-spacing: -3px;
+}
+.slogan{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    margin: 20px 0;
+
+  }
+.panel{
+    background-color: white;
+    width: 400px;
+    padding:35px;
+    margin: 15px auto;
+    box-sizing:border-box;
+    
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 0 3px 5px 2px rgb(150, 150, 150, 0.2);
+    
+
+}
+input{
+    width: 100%;
+    padding : 15px;
+    margin: 15px;
+    border: 1px solid #d2d2d2;
+    border-radius: 6px;
+    
+}
+input::placeholder{
+    font-size: 1.0rem;
+}
+input:focus{
+    outline: 1px solid var(--blue);
+}
+input:focus::placeholder{
+    color: #c2c2c2;
+}
+.log-in-button{
+    background-color: var(--blue);
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px;
+    font-weight: bolder;
+    text-align: center;
+    transition-property: background-color;
+    transition-duration: 2000ws;
+    transition-timing-function: ease-in-out;
+}
+.log-in-button:hover{
+    background-color: var(--dark-blue);
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.forgot{
+    font-size: 0.9rem;
+    color: var(--blue);
+    text-decoration: none;
+
+}
+hr{
+    margin: 18px 0;
+    opacity: 0.3;
+}
+.register-button{
+    background-color: var(--green);
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    display: inline-block;
+    text-align: center;
+    border-radius: 6px;
+    font-weight: bolder;
+    transition-property: background-color;
+    transition-duration: 100ms;
+    transition-timing-function: ease-in-out;
+
+
+}
+.register-button:hover{
+    background-color: var(--dark-green);
+    text-decoration: none;
+}
+.botton-link{
+    justify-content: center;
+    gap: 5px;
+    display: flex;
+    font-size: 0.9rem;
+}
+.page{
+    color: #000;
+    font-weight: bolder;
+}
+@media (max-width:600px){
+    /* for mob */
+    
+        body.main-wrapper .branding .botton-link .forgot .log-in-button
+        .log-in-button:hover .logo .page .panel .register-button .register-button:hover .slogan{
+            font-size: 20px;
+            
+        }
+    }
+    
+    @media (min-width:600px) and (max-width:768px){
+        /* rule for tabs */
+        body.main-wrapper .branding .botton-link .forgot .log-in-button
+        .log-in-button:hover .logo .page .panel .register-button .register-button:hover .slogan {        
+            font-size: 30px;
+        
+        }
+    
+    }
+    @media (min-width: 768px) and (max-width:1200px){
+        /* rule for laptop */
+             body.main-wrapper .branding .botton-link .forgot .log-in-button
+            .log-in-button:hover .logo .page .panel .register-button .register-button:hover .slogan{
+            font-size: 40px;
+            
+        }
+    }
